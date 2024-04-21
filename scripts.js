@@ -33,3 +33,4 @@ function display(result) {
     }
     resultbox.innerHTML = "<ul>" + content + "</ul>";
 }
+ 
