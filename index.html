@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Type Ahead / Search bar using JS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .search-box{
+            width: 700px;
+            background-color: rgb(188, 221, 223);
+            margin: 200px auto 0;
+            border-radius: 20px;
+        }
+        .row{
+            display: flex;
+            align-items: center;
+            padding: 10px 20px
+        }
+
+        input{
+            flex: 1;  /*Takes entire width*/
+            height: 50px;
+            background: transparent;
+            border: 0;
+            outline: 0;
+            font-size: 18px;
+        }
+
+        button{
+            background: transparent;
+            border: 0;
+        }
+
+        button i{
+            width: 25px;
+            color: #555;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        /* .result-box{
+            border-top: 1px solid #999;
+            padding: 15px 10px;
+        } */
+        #result-box ul li{
+           list-style: none;
+           border-radius: 3px;
+           padding: 15px;
+           cursor: pointer;
+        }
+
+        .result-box ul li:hover{
+            background: #e9f3ff;
+        }
+    </style>
+</head>
+<body>
+       <div class="search-box">
+        <div class="row">
+            <input type="text" id="input-box"  placeholder="Search" autocomplete="off" >
+            <button class="btn btn-primary"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <div class="result-box" id="result-box">
+            <!-- <ul>
+                <li>Javascript</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>div</li>
+                <li>search</li>
+            </ul> -->
+        </div>
+       </div>
+</body>
+<script src="./scripts.js" ></script>
+
+</html>
